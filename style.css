@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    color: orange;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: orange;
+    color: black;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+header .login a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+.carousel, .navigation-blocks, .questoes, .videos, .duvidas {
+    margin: 1em 0;
+}
+
+.navigation-blocks a {
+    display: inline-block;
+    margin: 0.5em;
+    padding: 1em;
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+}
+
+footer button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.night-mode {
+    background-color: white;
+    color: black;
+}
+
+.night-mode header, .night-mode footer {
+    background-color: orange;
+    color: black;
+}
+
+.night-mode .login a,
+.night-mode .navigation-blocks a,
+.night-mode footer button {
+    color: black;
+}

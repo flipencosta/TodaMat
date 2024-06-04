@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodaMat</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TodaMat</div>
+        <div class="login"><a href="../Todamat/php/login.php">Login</a></div>
+    </header>
+    <main>
+        <h1>Questões</h1>
+        <form action="../php/filter.php" method="POST">
+            <label for="materia">Filtrar por matéria:</label>
+            <select name="materia" id="materia">
+                <option value="regra_de_3">Regra de 3</option>
+                <option value="porcentagem">Porcentagem</option>
+                <!-- Adicionar mais opções aqui -->
+            </select>
+            <button type="submit">Filtrar</button>
+        </form>
+        <div class="questoes">
+            <!-- Questões filtradas aparecerão aqui -->
+        </div>
+    </main>
+    <footer>
+        <button onclick="toggleNightMode()">Modo Noturno</button>
+    </footer>
+</body>
+</html>

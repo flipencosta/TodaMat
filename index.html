@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodaMat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">TodaMat</div>
+        <div class="login"><a href="php/login.php">Login</a></div>
+    </header>
+    <main>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="img/imagem1.jpg" alt="Imagem 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/imagem2.jpg" alt="Imagem 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/imagem3.jpg" alt="Imagem 3">
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="navigation-blocks">
+            <a href="pages/questoes.html">Questões</a>
+            <a href="pages/videos.html">Vídeos</a>
+            <a href="pages/duvidas.html">Dúvidas</a>
+        </div>
+    </main>
+    <footer>
+        <button onclick="toggleNightMode()">Modo Noturno</button>
+    </footer>
+</body>
+</html>
